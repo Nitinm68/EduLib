@@ -144,6 +144,10 @@ app.listen(PORT, () =>
   console.log(` Server running → http://localhost:${PORT}`)
 );
 
+app.get("/",(req, res)=>{
+  res.send("Server Started")
+});
+
 /* ---------- ERROR HANDLERS ---------- */
 // app.use((req, res, next) => {
 //   setImmediate(() => next(new Error("Route not found")));
